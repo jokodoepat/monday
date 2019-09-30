@@ -1,5 +1,7 @@
 const express = require('express')
 const app = express()
+// fungsi untuk post
+app.use(express.urlencoded({extended:true}))
 
 app.get('/', (req, res) => {
     var x, y, z
